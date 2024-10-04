@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모험기획국 TRPG 핸드아웃 생성기 - inSANe </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="./script/script.js"></script>
+    <script
+        src="https://kit.fontawesome.com/de65e8c240.js"
+        crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>모험기획국 TRPG 핸드아웃 생성기</h1>
+        </a>
+        <p> Adventure Planning Service's TRPG Handout Generator v.1.0.0 </p>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li><a href="index.html" class="clicked">inSANe</a></li>
+            <li><a href="#" class="coming-soon">마기카로기아</a></li> 
+            <li><a href="#" class="coming-soon">시노비가미</a></li> 
+        </ul>
+    </nav>
+
+    <section class="brackets__container">
+        <p class="bracket-notes">아래 버튼을 눌러 괄호를 복사하세요. </p>
+        <div class="bracket__button-group">
+            <button class="bracket-btn" data-bracket="《》">《 》</button>
+            <button class="bracket-btn" data-bracket="「」">「 」</button>
+            <button class="bracket-btn" data-bracket="【】">【 】</button>
+        </div>
+    </section>
+
+    <div class="version-switch-btn__container">
+        <button id="switchToDefault" class="switch-btn">인세인 핸드아웃으로 전환</button>
+        <button id="switchToSCP" class="switch-btn">SCP 핸드아웃으로 전환</button>
+    </div>
+    
+    <div class="main-content__container">
+        <div id="handoutPreview" class="handout-preview__container general"></div>
+        <div id="handoutEditor" class="handout-editor__container general"></div>
+    </div>
+
+    <p class="results-note">↓ 점선 아래로 핸드아웃이 추가됩니다. ↓</p>
+
+    <hr noshade/>
+
+    <!-- 카드 결과물 -->
+    <section class="handout-output__button-group">
+        <button type="reset" class="handout-output__reset-btn">초기화</button>
+        <button type="submit" class="handout-output__print-btn">인쇄</button>
+    </section>
+
+    <section class="card__container"></section>
+
+
+    <!-- 준비중 모달 -->
+    <div id="comingSoonModal" class="modal">
+        <div class="modal-content notice-modal">
+            <span id="modal-message">준비중입니다.</span>
+        </div>
+    </div>
+
+    <div class="guide__container">
+        <a href="https://docs.google.com/spreadsheets/d/1IhuKfUjlPJQJef6plQYkKrNQeOGcNkcC49iyh534fso/edit?usp=sharing" target="_blank">
+            <i class="fa-solid fa-circle-question"></i>
+        </a>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        본 사이트는 구글 크롬 브라우저에 최적화되어 있습니다.<br>
+        제작 <a href="https://x.com/315486v6" target="_blank">달링꿀(@315486v6)</a> 
+    </footer>
+
+</body>
+</html>
